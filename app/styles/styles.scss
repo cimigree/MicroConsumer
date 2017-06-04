@@ -1,0 +1,94 @@
+/* Styles */
+@import './colors';
+
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+    vertical-align: middle; 
+}
+
+h1 {
+  color: $twitter-blue;
+  text-align: center;
+}
+
+ul {
+    margin: 10px 7px;
+  padding: 0px;
+  display: inline-block;
+
+}
+li {
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin: 10px 5px;
+  padding: 5px 16px 16px 16px;
+  min-width: 550px;
+  max-width: 550px;
+  text-align: left;
+    
+    .toRight {
+            text-align: right;
+        }
+
+    .toLeft {
+            text-align: left;
+        }
+    a {
+      font-weight: normal;
+        color: #666;
+        font-size: 16px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 20px;  
+    }
+    i {
+        color: #bbb;
+        padding-right: 4px;
+    }
+}
+ 
+.search {
+  margin-bottom: 20px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+
+  label#tweetsearch {
+    display:inline-block;
+    font-size: 22px !important;
+    font-weight: normal !important;
+    vertical-align: middle;
+  }
+  select {
+      width: 240px;
+      height: 50px;
+    margin-right: 10px;
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  button {
+      display:inline-block;
+  }
+}
+
+#home {
+text-align: center;
+display: inline-block;
+
+}
+
+
