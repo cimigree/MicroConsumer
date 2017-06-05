@@ -26,6 +26,7 @@ convertTime (time) {
     let min = Math.floor(totalseconds/60)
     return `${min} m ${sec} s ago`
  }
+ //takes time in iso8601 from database/ api and converts it to the time passed since the tweet was created
 
  getMediaImage (mediaarray) {
      let mediastring = _.toString(mediaarray)
@@ -39,9 +40,8 @@ convertTime (time) {
      }
      }
  }
+//for some reason the api passes the media image in with all sorts of extra stuff. This function finds the http . . ..jpg part and creates the url necessary to display the picture.
 
-
-  // actions
   search(string) {
     axios.get(`https://${SERVICE_URL}${string}`)
     .then(response => {
@@ -59,7 +59,10 @@ convertTime (time) {
             likes: t.favoritecount 
         }),
       );
+      //maps through the response array and saves the items into javascript variables (ints or strings or time)
+      
       let tenTweets = tweets.slice(0,10)
+// takes out only ten from the array.
       this.setState({
         tweets: _.sortBy(tenTweets, t => t.createdat)
       });

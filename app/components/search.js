@@ -11,7 +11,6 @@ export default class Search extends Component {
   this.state= {searchText: "NASA"};
   }
 
-  // actions
   handleSearchTextChange(e) {
     this.setState({searchText: e.target.value});
   }
@@ -20,6 +19,7 @@ export default class Search extends Component {
     this.props.search(this.state.searchText);
     e.preventDefault();
   }
+  //uses the search from the home folder and passes the prop of the choice as to which search text to use
 
 
   // render
