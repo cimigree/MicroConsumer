@@ -42,7 +42,7 @@ export default {
       filename: '[name].[chunkhash].css',
     }),
     new HtmlWebpackPlugin({
-      template: 'app/index.ejs',
+      template: 'app/pages.ejs',
       inject: true,
     }),
     new UglifyJsPlugin(),
