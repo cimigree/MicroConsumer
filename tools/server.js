@@ -5,10 +5,6 @@ import webpack from 'webpack';
 import webpackDevMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 
-const express = require('express');
-const app = express();
-
-app.use(express.static(__dirname + '/app/'));
 
 const bundler = webpack(config);
 
