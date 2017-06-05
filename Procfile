@@ -1,1 +1,1 @@
-web: node tools/server.js
+web: node index.js
