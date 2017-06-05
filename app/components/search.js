@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import {FormControl, Button} from 'react-bootstrap';
 import autobind from 'class-autobind';
 
-import {updateSearchText, searchForTweets} from '../actions';
-
 export default class Search extends Component {
   constructor(props) {
     super(props);

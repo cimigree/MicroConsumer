@@ -24,29 +24,44 @@ convertTime (time) {
     let totalseconds = now.diff(tweetTime, 'seconds');
     let sec = totalseconds % 60
     let min = Math.floor(totalseconds/60)
-    return `${min} min ${sec} sec ago`
+    return `${min} m ${sec} s ago`
  }
+
+ getMediaImage (mediaarray) {
+     let mediastring = _.toString(mediaarray)
+     if (mediastring) {
+    let startindex = mediastring.indexOf('http');
+    if (startindex != -1){
+    let endindex = mediastring.indexOf("jpg", startindex);
+    let imageurl =  mediastring.slice(startindex, endindex+3);
+    // console.log(imageurl)
+    return imageurl;
+     }
+     }
+ }
+
+
   // actions
   search(string) {
     axios.get(`https://${SERVICE_URL}${string}`)
     .then(response => {
       const tweets = response.data.map((t, index) =>
-        ({
+        ({       
             key: index,
             avatar: t.profileimage,
             name: t.username,
             screenname: t.userscreenname,
-            useruri: t.userusri,
+            useruri: t.useruri,
             timeago: this.convertTime(t.createdat),
             text: t.fulltext,
-            image: t.mediaimage,
+            image: this.getMediaImage(t.mediaimage),
             retweets: t.retweetct, 
             likes: t.favoritecount 
-        })
+        }),
       );
-
+      let tenTweets = tweets.slice(0,10)
       this.setState({
-        tweets: _.sortBy(tweets, t => t.createdat),
+        tweets: _.sortBy(tenTweets, t => t.createdat)
       });
     });
   }
