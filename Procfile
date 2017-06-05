@@ -1,1 +1,1 @@
-web: node tools/server.js NODE_ENV=production
+web: node index.js

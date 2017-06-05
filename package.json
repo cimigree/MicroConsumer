@@ -51,7 +51,6 @@
   "scripts": {
     "start": "npm-run-all --parallel serve",
     "serve": "babel-node tools/server.js",
-    // "prod": "NODE_ENV=production node tools/server.js",
     "clean": "rimraf dist && mkdir dist",
     "build": "npm run clean && cross-env NODE_ENV=production webpack --no-color --config webpack.config.prod.babel.js --bail"
   }
