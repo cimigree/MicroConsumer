@@ -5,6 +5,13 @@
   "engines": {
     "npm": ">=3"
   },
+
+  "author": "Cindy Green",
+  "repository": {
+    "type": "git",
+    "url": "http://topicaltweets.s3-website-us-east-1.amazonaws.com/"
+  },
+
   "scripts": {
     "start": "npm-run-all --parallel serve",
     "serve": "babel-node tools/server.js",
