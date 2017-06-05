@@ -76,6 +76,13 @@ li {
         color: #bbb;
         padding-right: 4px;
     }
+    img#image {
+        display: block;
+        max-width: 500px;
+        max-height: 500px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
 }
  
 .search {

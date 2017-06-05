@@ -16,7 +16,7 @@ export default ({tweets=[]}) =>
             </Row>
             <p id="text">{item.text}</p>
             <Row>
-            {item.image ? <img src={item.image}/> : null}
+            {item.image ? <img src={item.image} id="image"/> : null}
             <Col className="toRight" xs={6} sm={6} md={6} lg={6}><p><i className="fa fa-retweet" aria-hidden="true"></i>{item.retweets}</p></Col>
             <Col className="toLeft" xs={5} sm={5} md={5} lg={5} ><p><i className="fa fa-heart" aria-hidden="true"></i>{item.likes}</p></Col>
             </Row>
