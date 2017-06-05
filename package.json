@@ -6,7 +6,6 @@
     "axios": "0.16.1",
     "bootstrap-sass": "^3.3.7",
     "class-autobind": "0.1.4",
-    "express": "4.15.3",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "object-assign": "4.1.1",

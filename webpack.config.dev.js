@@ -43,7 +43,7 @@ export default {
     new HotModuleReplacementPlugin(),
     new NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
-      template: 'app/pages.ejs',
+      template: 'app/index.ejs',
       inject: true,
     }),
     new SourceMapDevToolPlugin({
