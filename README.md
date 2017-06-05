@@ -1,4 +1,4 @@
-# Topical Tweet Viewer
+# Topical Tweet Viewer * [TopicalTweets](http://topicaltweets.s3-website-us-east-1.amazonaws.com/)
 
 This is a web app that allows the user to choose from one of three topics to view the latest ten Tweets in English that were Tweeted.
 
@@ -17,11 +17,11 @@ In case you don’t already have the following, you will need to have them insta
 On a Mac:
 You can install Yarn through the [Homebrew package manager](http://brew.sh/). This will also install Node.js if it is not already installed.
 
-brew install yarn
+`brew install yarn`
 
 If you use [nvm](https://github.com/creationix/nvm) you should exclude installing Node.js so that nvm’s version of Node.js is used.
 
-brew install yarn --ignore-dependencies
+`brew install yarn --ignore-dependencies`
 ```
 
 ### Installing
@@ -31,17 +31,16 @@ To get this app up and running in a development environment:
 
 ```
 1. Fork the repo: and then run git clone to use it locally.
-```
 
-2. Run yarn install or npm install to install the dependencies.
+2. Run `yarn install` or `npm install` to install the dependencies.
 
-```
-3. Type yarn start into the console to start up a development server at localhost:8000
+3. Type `yarn start` into the console to start up a development server at localhost:8000
 ```
 
 ## Deployment
-
-To deploy, simply type yarn build into the terminal and then you will find your built documents in the dist folder. Create a folder called public in the dist folder. Move all files but the index.html into the public folder and then you are good to publish to any static website generator.
+```
+To deploy, simply type `yarn build` into the terminal and then you will find your built documents in the dist folder. Create a folder called public in the dist folder. Move all files but the index.html into the public folder and then you are good to publish to any static website generator.
+```
 
 ## Built With
 
@@ -50,9 +49,7 @@ To deploy, simply type yarn build into the terminal and then you will find your 
 
 ## Author
 
-* **Cindy Green** - 
-
-Other projects can be found at cimigreen.com
+* **Cindy Green** Other projects can be found at cimigreen.com
 
 
 
