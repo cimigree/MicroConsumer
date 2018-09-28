@@ -15,10 +15,6 @@ export default class Search extends Component {
     this.setState({searchText: e.target.value});
   }
 
-  handleSubmit(e) {
-    this.props.search(this.state.searchText);
-    e.preventDefault();
-  }
   //uses the search from the home folder and passes the prop of the choice as to which search text to use
 
 
@@ -26,7 +22,7 @@ export default class Search extends Component {
   render() {
     return (
         <div className="search">
-        <form onSubmit={this.handleSubmit}>
+        <form >
           <label id="tweetsearch">
           Choose a topic to get Tweets About: 
         </label>
@@ -36,7 +32,7 @@ export default class Search extends Component {
         <option value="opensource">OPEN SOURCE</option>
         <option value="healthcare">HEALTH CARE</option>
         </FormControl>
-       <Button bsStyle="primary" bsSize="large" type="submit">Search</Button>
+       <Button bsStyle="primary" bsSize="large" onClick={() => this.props.search(this.state.searchtext)} >Search</Button>
        </form>
        </div>
     );

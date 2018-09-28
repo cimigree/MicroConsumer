@@ -1,4 +1,4 @@
-# Topical Tweet Viewer * [TopicalTweets](http://topicaltweets.s3-website-us-east-1.amazonaws.com/)
+# Topical Tweet Viewer  [TopicalTweets](http://topicaltweets.s3-website-us-east-1.amazonaws.com/)
 
 This is a web app that allows the user to choose from one of three topics to view the latest ten Tweets in English that were Tweeted.
 
@@ -56,5 +56,5 @@ To deploy, simply type `yarn build` into the terminal and then you will find you
 ## Acknowledgments
 
 * Thank you to John Lange from Academy Pittsburgh from whom I learned how to learn.
-* Thanks also to Josh Gretz from TrueFit whose React started kit I used and who taught me a lot about what I know about React
+* Thanks also to Josh Gretz from TrueFit whose React starter kit I used and who taught me a lot about what I know about React
 
